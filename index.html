@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emperor</title>
+    <link rel="icon" type="image/x-icon" href="Assets/images/LogoRounded.png">
+    <script src="Assets/js/title.js"></script>
+    <link href="Assets/css/styles.css" rel="stylesheet">
+    <link href="Assets/css/particles.css" media="screen" rel="stylesheet">
+    <link href="Assets/css/Nav.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://univevip.github.io/cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Emperor</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="https://discord.gg/XnU8vBzAvK" class="active">Discord</a>
+        </nav>
+    </header>
+
+    <div class="center">
+        <h1>Emperor</h1>
+        <p1><span class="auto-type"></span></p1>
+    </div>
+
+    <audio id="welcome-sound" src="Assets/sounds/welcome.mp3" preload="auto"></audio>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <div id="particles-js"></div>
+    <script src="Assets/js/particles.js"></script>
+    <script src="Assets/js/app.js"></script>
+
+    <script>
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Forever undetected.", "Working.", "#1 cheat provider", "emperor > all."],
+            typeSpeed: 85,
+            backSpeed: 85,
+            backDelay: 700,
+            smartBackspace: true,
+            loop: true,
+        });
+
+
+        function toggleAudio(event) {
+            var audio = document.getElementById('welcome-sound');
+
+            if (event.target.tagName === 'BUTTON' || event.target.tagName === 'A') {
+                return;
+            }
+            if (audio.paused) {
+                audio.play().catch(function(error) {
+
+                    console.log('Audio play was prevented:', error);
+                });
+            } else {
+                audio.pause();
+            }
+        }
+
+        document.addEventListener('click', toggleAudio);
+    </script>
+</body>
+</html>

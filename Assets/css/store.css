@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap');
+
+body {
+    background-color: #000;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.center {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.topcenter
+{
+    text-align:center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.topcenter h1 {
+    text-shadow: 0px 3px 16px #00fff1;
+    text-emphasis-color: #00fff1;
+    -webkit-text-fill-color: #00fff1;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topcenter p1 {
+    font-weight: 200;
+    margin-top: .1rem;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    user-select: none;
+    cursor: pointer;
+    display:inline-block;
+    width: auto;
+    padding: .6rem !important;
+    margin: .7rem .3rem 1rem 0 !important;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(25,25,25);
+    text-decoration: none;
+    font-size: 1rem !important;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform .2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 16px #00fff1;
+}
+
+.container {
+    width: 625px;
+    height: 335px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem; 
+    background-color: rgba(80, 80, 80, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0.5em;
+    font-weight: 100;
+    text-align: top;
+    border-radius: 6px;
+    backdrop-filter: opacity(1px);
+    transition: all .5s cubic-bezier(0.42, 0, 0.37, 1);
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+.container h3{
+    text-align: center;
+    background-color: transparent;
+    text-shadow: 0px 0px 50px #7e47ff;
+    text-emphasis-color: rgb(255,255,255);
+    color: rgb(225, 225, 225);
+    margin-top: 115px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.container p1{
+    text-align: center;
+    background-color: transparent;
+    text-shadow: 0px 0px 10px #ffffff;
+    padding-bottom: 20px;
+    color: rgb(225, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
