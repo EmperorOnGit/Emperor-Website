@@ -9,6 +9,39 @@
     <link href="Assets/css/particles.css" media="screen" rel="stylesheet">
     <link href="Assets/css/Nav.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://univevip.github.io/cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <style>
+        .achievement-notification {
+            position: fixed;
+            top: 100px;
+            left: 10px;
+            background-color: #000;
+            color: #00FFFF;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 255, 255, 0.5);
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .close-notification {
+            background: none;
+            border: none;
+            color: #00FFFF;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-notification:hover {
+            color: #E0FFFF;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,7 +65,6 @@
     <script src="Assets/js/app.js"></script>
 
     <script>
-
         var typed = new Typed(".auto-type", {
             strings: ["Forever undetected.", "#1 cheat provider", "emperor > all."],
             typeSpeed: 85,
@@ -42,7 +74,6 @@
             loop: true,
         });
 
-
         function toggleAudio(event) {
             var audio = document.getElementById('welcome-sound');
 
@@ -51,7 +82,6 @@
             }
             if (audio.paused) {
                 audio.play().catch(function(error) {
-
                     console.log('Audio play was prevented:', error);
                 });
             } else {
@@ -60,6 +90,30 @@
         }
 
         document.addEventListener('click', toggleAudio);
+    </script>
+
+    <div id="achievement-notification" class="achievement-notification">
+        <p>Congrats, You have reached the #1 Cheat Provider</p>
+        <button id="close-notification" class="close-notification">&times;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var closeBtn = document.getElementById('close-notification');
+            var notification = document.getElementById('achievement-notification');
+
+            function showNotification() {
+                setTimeout(function() {
+                    notification.style.opacity = '1';
+                }, 2000);
+            }
+
+            showNotification();
+
+            closeBtn.addEventListener('click', function() {
+                notification.style.opacity = '0';
+            });
+        });
     </script>
 </body>
 </html>
