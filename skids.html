@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fuck skids</title>
+    <link rel="icon" type="image/x-icon" href="Assets/images/LogoRounded.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="Assets/js/title2.js"></script>
+    <link href="Assets/css/styles.css" rel="stylesheet">
+    <link href="Assets/css/particles.css" media="screen" rel="stylesheet">
+    <link href="Assets/css/Nav.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://univevip.github.io/cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <style>
+        body {
+            cursor: url('Assets/images/custom-cursor.cur'), auto;
+        }
+
+        a, button, input, textarea {
+            cursor: url('Assets/images/custom-cursor.cur'), auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Skids</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="https://discord.gg/XnU8vBzAvK" class="active">Discord</a>
+            <a href="skids.html" class="active">Skids</a>
+        </nav>
+    </header>
+
+    <div class="center">
+        <h1>Skids</h1>
+        <p1><span class="auto-type"></span></p1>
+    </div>
+
+    <audio id="welcome-sound" src="Assets/sounds/fr186u.mp3" preload="auto"></audio>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <div id="particles-js"></div>
+    <script src="Assets/js/particles.js"></script>
+    <script src="Assets/js/app.js"></script>
+
+    <script>
+        var audio = document.getElementById('welcome-sound');
+        audio.volume = 0.2;
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Alexander Millans", "Rico Rolando Morales", "Abbigail Grace Mosely"],
+            typeSpeed: 85,
+            backSpeed: 85,
+            backDelay: 700,
+            smartBackspace: true,
+            loop: true,
+        });
+
+        function toggleAudio(event) {
+            if (event.target.tagName === 'BUTTON' || event.target.tagName === 'A') {
+                return;
+            }
+            if (audio.paused) {
+                audio.play().catch(function(error) {
+                    console.log('Audio play was prevented:', error);
+                });
+            } else {
+                audio.pause();
+            }
+        }
+
+        document.addEventListener('click', toggleAudio);
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&oq=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNDMyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8', '_blank');
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 's') {
+                event.preventDefault();
+                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&oq=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNDMyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8', '_blank');
+            }
+            if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                event.preventDefault();
+                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&oq=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNDMyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8', '_blank');
+            }
+        });
+    </script>
+</body>
+</html>
