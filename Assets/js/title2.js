@@ -7,7 +7,7 @@ document.addEventListener ? document.addEventListener("DOMContentLoaded", (funct
     loaded()
 }));
 var x = 0,
-    titleText = ["fuck skids", "im hot", "fuck faggots", "doxbin.sh", "doxbin.org", "kkk member A-ZA-Z0-9","#wehateskids","don't skid :)"];
+    titleText = ["fuck skids", "im hot", "fuck faggots","doxbin.com", "doxbin.org","kkk member A-ZA-Z0-9","#wehateskids","doxbin.net","don't skid :)"];
 
 function loop() {
     document.getElementsByTagName("title")[0].innerHTML = titleText[x++ % titleText.length]
