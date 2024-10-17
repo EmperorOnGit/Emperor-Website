@@ -18,25 +18,61 @@
         a, button, input, textarea {
             cursor: url('Assets/images/custom-cursor.cur'), auto;
         }
+		/* im too lazy to make it a css file lol */
+#sigmabutton {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: cyan;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#sigmabutton2 {
+    position: fixed;
+    bottom: 10px;
+    left: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    color: cyan;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#sigmabutton3 {
+    position: fixed;
+    bottom: 10px;
+    left: 225px;
+    font-size: 18px;
+    font-weight: bold;
+    color: cyan;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
     </style>
 </head>
 <body>
-<header>
-    <a href="#" class="logo">Skids</a>
-    <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="https://discord.gg/XnU8vBzAvK" class="active">Discord</a>
-        <a href="skids.html" class="active">Skids</a>
-        <a href="https://doxbin.org/upload/ShibaGTNewLatestLast" class="active">ShibaGT Dox</a>
-    </nav>
-</header>
+    <header>
+        <a href="#" class="logo">Skids</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="https://discord.gg/XnU8vBzAvK" class="active">Discord</a>
+            <a href="skids.html" class="active">Skids</a>
+        </nav>
+    </header>
+        <nav>
+	<a href="https://doxbin.org/upload/ShibaGTNewLatestLast" id="sigmabutton">ShibaGT Dox</a>
+	<a href="https://doxbin.org/upload/F0Extorter" id="sigmabutton2">F_0 Dox</a>
+	<a href="https://doxbin.org/upload/GorillaTaggingKidRatterSkidUnfinishedDoxByMafi4" id="sigmabutton3">GorillaTaggingKid Dox</a>
+        </nav>
 
     <div class="center">
         <h1>Skids</h1>
         <p1><span class="auto-type"></span></p1>
     </div>
 
-    <audio id="welcome-sound" src="Assets/sounds/fr186u.mp3" preload="auto"></audio>
+    <audio id="welcome-sound" src="Assets/sounds/fr186u.mp3" preload="auto" loop></audio>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <div id="particles-js"></div>
@@ -48,7 +84,7 @@
         audio.volume = 0.2;
 
         var typed = new Typed(".auto-type", {
-            strings: ["Alexander Millans", "Rico Rolando Morales", "Abbigail Grace Mosely", "Kevin Mitchel Spera"],
+            strings: ["Alexander Millans", "Rico Rolando Morales", "Abbigail Grace Mosely", "Kevin Mitchel Spera", "Patrick Mitchell Hale"],
             typeSpeed: 85,
             backSpeed: 85,
             backDelay: 700,
@@ -73,17 +109,17 @@
 
         document.addEventListener('contextmenu', function(event) {
             event.preventDefault();
-            window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&oq=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNDMyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8', '_blank');
+            window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)', '_blank');
         });
 
         document.addEventListener('keydown', function(event) {
             if (event.ctrlKey && event.key === 's') {
                 event.preventDefault();
-                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&oq=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNDMyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8', '_blank');
+                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)', '_blank');
             }
             if (event.ctrlKey && event.shiftKey && event.key === 'I') {
                 event.preventDefault();
-                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&oq=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNDMyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8', '_blank');
+                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)', '_blank');
             }
         });
     </script>
