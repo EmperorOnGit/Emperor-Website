@@ -18,8 +18,9 @@
         a, button, input, textarea {
             cursor: url('Assets/images/custom-cursor.cur'), auto;
         }
-
-        .achievement-notification {
+		
+		/* background-color: #181a1b; */
+        .achivnoti {
             position: fixed;
             top: 100px;
             left: 10px;
@@ -36,7 +37,7 @@
             transition: opacity 0.5s ease;
         }
 
-        .close-notification {
+        .remnoti {
             background: none;
             border: none;
             color: #00FFFF;
@@ -45,10 +46,6 @@
             margin-left: 15px;
             cursor: pointer;
             transition: color 0.3s ease;
-        }
-
-        .close-notification:hover {
-            color: #E0FFFF;
         }
     </style>
 </head>
@@ -94,49 +91,55 @@
             }
             if (audio.paused) {
                 audio.play().catch(function(error) {
-                    console.log('Audio play was prevented:', error);
+                    console.log('Audio play was prevented 🤓🤓🤓', error);
                 });
             } else {
                 audio.pause();
             }
         }
 
-        document.addEventListener('click', toggleAudio);
+	document.addEventListener('click', toggleAudio);
 
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-            window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)', '_blank');
-        });
+																																																																																																									document.addEventListener('contextmenu', function(event) {
+																																																																																																										event.preventDefault();
+																																																																																																										window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger', '_blank');
+																																																																																																									});
 
-        document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey && event.key === 's') {
-                event.preventDefault();
-                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)', '_blank');
-            }
-            if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-                event.preventDefault();
-                window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger)', '_blank');
-            }
-        });
-    </script>
+																																																																																																									document.addEventListener('keydown', function(event) {
+																																																																																																										if (event.ctrlKey && event.key === 's') {
+																																																																																																											event.preventDefault();
+																																																																																																											window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger', '_blank');
+																																																																																																										}
+																																																																																																										if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+																																																																																																											event.preventDefault();
+																																																																																																											window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger', '_blank');
+																																																																																																										}
+																																																																																																										if (event.key === 'F12') {
+																																																																																																											event.preventDefault();
+																																																																																																											window.open('https://www.google.com/search?q=i+want+to+kill+myself+please+kill+me+im+going+to+kill+myself+(stop+skidding+nigger', '_blank');
+																																																																																																										}
+	});
+</script>
+	
+	
 
-    <div id="achievement-notification" class="achievement-notification">
+    <div id="achivnoti" class="achivnoti">
         <p>Congrats, You have reached the #1 Cheat Provider</p>
-        <button id="close-notification" class="close-notification">&times;</button>
+        <button id="remnoti" class="remnoti">&times;</button>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var closeBtn = document.getElementById('close-notification');
-            var notification = document.getElementById('achievement-notification');
+            var closeBtn = document.getElementById('remnoti');
+            var notification = document.getElementById('achivnoti');
 
-            function showNotification() {
+            function showNoti() {
                 setTimeout(function() {
                     notification.style.opacity = '1';
                 }, 2000);
             }
 
-            showNotification();
+            showNoti();
 
             closeBtn.addEventListener('click', function() {
                 notification.style.opacity = '0';
