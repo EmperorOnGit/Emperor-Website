@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=GreycliffCF&display=swap');
+
+:root {
+    --primary: #5d9cff;
+    --text: #fff
+   }
+   * {
+    font-family:'GreycliffCF', sans-serif;
+    padding:0;
+    margin:0;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-user-drag:none;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none
+   }
+   body {
+    background-color:#000;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+    transition:opacity 1s;
+    -webkit-transition:opacity 1s
+   }
+   .splash {
+    position:absolute;
+    width:100%;
+    height:100%;
+    min-width:100%;
+    min-height:100%;
+    background-color:#000000de;
+    backdrop-filter:blur(5px);
+    z-index:100
+   }
+   .splash .splash-header {
+    color:var(--text);
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    line-clamp:1;
+    -webkit-box-orient:vertical;
+    cursor:pointer
+   }
+   .outer {
+    width:100%;
+    height:100%;
+    min-width:100%;
+    min-height:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center
+   }
+   .main-container {
+    opacity:0;
+    width:90%;
+    height:90%;
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:10
+   }
+   .profile {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:550px;
+    height:auto;
+    min-height:175px;
+    background-image:linear-gradient(rgb(22 22 22),rgb(22 22 22));
+    border-radius:12px;
+    padding-bottom:32.5px
+   }
+   .profile .pic {
+    filter:drop-shadow(0px 0px 6px black);
+    width:150px;
+    height:150px;
+    border-radius:500px;
+    margin:-70px auto -20px;
+    display:flex;
+    object-fit:cover
+   }
+   .profile .displayname {
+    color:#efefef;
+    margin-top:20px;
+    font-size:30px;
+    font-weight:600;
+    text-align:center
+   }
+   .profile .username {
+    color:#7f7f7f;
+    margin-left:195px;
+    font-size:15px;
+    font-weight:400
+   }
+   .profile .description {
+    color:#7f7f7f;
+    margin-top:10px;
+    font-size:15px;
+    font-weight:400;
+    height:auto;
+    max-height:100px;
+    width:calc(100%);
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    line-clamp:3;
+    -webkit-box-orient:vertical;
+    text-align:center
+   }
+   .links {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:4px;
+    margin-bottom:7px
+   }
+   .link {
+    margin-right:3.5px;
+    transition:.3s;
+    margin-left:3.5px;
+    margin-top:7px
+   }
+   .link:hover {
+    transition:.3s;
+    transform:scale(1.1)
+   }
+   .link svg {
+    color:#fff;
+    fill:#fff;
+    height:38px;
+    filter:drop-shadow(1px 1px 5px #ffffff)
+   }
+   .link svg:hover {
+    cursor:pointer
+   }
+   .badges {
+    background:#f0f0f014;
+    padding:5px 2px 5px 5px;
+    border-radius:10px;
+    border:solid #ebebeb40 1px;
+    display:flex;
+    width:fit-content;
+    margin:5px 0;
+    position:relative;
+    transform:translate(-50%,0);
+    left:50%
+   }
+   .badge {
+    margin-right:3px;
+    width:30px;
+    height:30px
+   }
+   .default-badge {
+    filter:brightness(100) drop-shadow(1px 1px 5px #e3e3e3) saturate(0) contrast(100)
+   }
+   .video {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    object-fit:cover
+   }
+   .overlay {
+    width:100%;
+    height:100%;
+    background-color:#0009;
+    position:absolute;
+    backdrop-filter:blur(7px)
+   }
+   .views {
+    position:absolute;
+    bottom:0;
+    right:0
+   }
+   .views-text {
+    color:#fff;
+    font-weight:600;
+    padding:12.5px
+   }
+   @keyframes blink {
+    0%,
+    100% {
+     opacity:1
+    }
+    50% {
+     opacity:0
+    }
+   }
+   canvas {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1
+   }
+   
